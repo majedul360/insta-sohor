@@ -1,0 +1,8 @@
+.single-bike {
+  border: 0.1rem solid black;
+  padding: 2rem;
+}
+
+.single-bike img {
+  width: 20rem;
+}

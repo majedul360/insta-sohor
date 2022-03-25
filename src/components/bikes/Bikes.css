@@ -1,0 +1,11 @@
+.bikes {
+  display: flex;
+}
+
+.bikes .bikes-container {
+  flex: 9;
+  padding-right: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
