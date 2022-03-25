@@ -12,21 +12,23 @@
 
 /* media quearies */
 @media (max-width: 768px) {
+  .bikes {
+    flex-direction: column-reverse;
+  }
+
   .bikes .bikes-container {
     grid-template-columns: repeat(2, 1fr);
+    padding-right: 0;
+    margin-top: 3rem;
+  }
+
+  .bikes .cart {
+    padding-bottom: 2rem;
   }
 }
 
 @media (max-width: 450px) {
-  .bikes {
-    flex-direction: column-reverse;
-  }
   .bikes .bikes-container {
-    flex: 12;
     grid-template-columns: repeat(1, 1fr);
-    padding-right: 0;
-  }
-  .bikes .cart {
-    flex: 12;
   }
 }

@@ -9,14 +9,19 @@ const Bikes = () => {
       .then((res) => res.json())
       .then((data) => setBikes(data));
   }, []);
+
+  const [cart, setCart] = useState([]);
+  const addToCart = (bike) => {
+    setCart([...cart, bike]);
+  };
   return (
     <div className="bikes">
       <div className="bikes-container">
         {bikes.map((bike) => (
-          <SingleBike key={bike.id} bike={bike} />
+          <SingleBike key={bike.id} bike={bike} addToCart={addToCart} />
         ))}
       </div>
-      <Cart className="cart" />
+      <Cart className="cart" cart={cart} setCartAgain={setCart} />
     </div>
   );
 };
