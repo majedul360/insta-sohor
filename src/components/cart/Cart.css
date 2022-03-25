@@ -3,3 +3,27 @@
   background-color: #15023a;
   color: white;
 }
+
+.cart h3 {
+  text-align: center;
+  margin: 2.5rem 0;
+  font-size: 2rem;
+}
+
+.cart .btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart .btn-container span {
+  font-size: 1.7rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #cc282e;
+  border-radius: 0.5rem;
+}
+
+.cart .btn-container span:first-child {
+  background-color: #10a053;
+  margin-bottom: 2rem;
+}
