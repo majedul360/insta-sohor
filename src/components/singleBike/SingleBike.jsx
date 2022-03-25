@@ -7,7 +7,7 @@ const SingleBike = ({ bike }) => {
     <div className="single-bike">
       <img src={img} alt="" />
       <h3>{name}</h3>
-      <h2>price: {price}</h2>
+      <h2>price: {price} BDT</h2>
       <span>
         add to cart <FontAwesomeIcon icon={faShoppingCart} />{" "}
       </span>

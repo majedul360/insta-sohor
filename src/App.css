@@ -5,6 +5,11 @@ h3.info {
 
 .app h1 {
   font-size: 4rem;
+  color: #cc282e;
+}
+
+.app h1 span {
+  color: #10a053;
 }
 
 .app .info {

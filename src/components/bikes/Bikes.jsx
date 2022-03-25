@@ -16,7 +16,7 @@ const Bikes = () => {
           <SingleBike key={bike.id} bike={bike} />
         ))}
       </div>
-      <Cart />
+      <Cart className="cart" />
     </div>
   );
 };
