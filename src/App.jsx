@@ -1,5 +1,6 @@
 import "./App.css";
 import Bikes from "./components/bikes/Bikes";
+import QusAns from "./components/qusAns/QusAns";
 function App() {
   return (
     <div className="app">
@@ -9,6 +10,7 @@ function App() {
       <h3 className="info">most popular bike portal of bangladesh</h3>
       <div className="section">
         <Bikes />
+        <QusAns />
       </div>
     </div>
   );
