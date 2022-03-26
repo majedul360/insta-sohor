@@ -2,7 +2,7 @@
 
 ### Most Popular Bike Portal Of Bangladesh
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+live site link: [BikeBd](https://bike-bd.netlify.app/).
 
 ## Available Scripts
 
