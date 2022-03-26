@@ -26,12 +26,7 @@
   cursor: pointer;
 }
 
-.cart .btn-container span:first-child {
+.cart .btn-container .choose-one-btn {
   background-color: #10a053;
   margin-bottom: 2rem;
-}
-
-.cart .bike-name {
-  font-size: 2rem;
-  margin: 0.5rem 0;
 }

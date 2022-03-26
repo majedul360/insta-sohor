@@ -1,0 +1,34 @@
+.selected-bike {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.selected-bike.active {
+  display: none;
+}
+
+.selected-bike img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.selected-bike h3 {
+  font-size: 1.7rem;
+}
+
+.selected-bike .icon {
+  font-size: 2rem;
+  color: #10a053;
+  cursor: pointer;
+}
+
+/* media quearies */
+@media (max-width: 1024px) {
+  .selected-bike {
+    justify-content: space-evenly;
+  }
+}

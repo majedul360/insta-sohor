@@ -1,4 +1,6 @@
 import { useState } from "react";
+import ChooseOne from "../chooseOne/ChooseOne";
+import SelectedBike from "../selectedBike/SelectedBike";
 import "./Cart.css";
 
 const Cart = ({ cart, setCartAgain }) => {
@@ -7,20 +9,19 @@ const Cart = ({ cart, setCartAgain }) => {
     var item = cart[Math.floor(Math.random() * cart.length)];
     setItem(item);
   };
+
   return (
     <div className="cart">
       <h2>selected bikes</h2>
       {cart.map((cart) => {
-        return (
-          <h3 className="bike-name" key={cart.id}>
-            {cart.name}
-          </h3>
-        );
+        return <SelectedBike key={cart.id} cart={cart} />;
       })}
       <div className="btn-container">
-        <span onClick={chooseOne}>choose 1 for me</span>
+        {item && <ChooseOne item={item} />}
+        <span className="choose-one-btn" onClick={chooseOne}>
+          choose 1 for me
+        </span>
         <span onClick={() => setCartAgain([], setItem({}))}>choose again</span>
-        {item && <h2>{item.name}</h2>}
       </div>
     </div>
   );

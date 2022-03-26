@@ -11,19 +11,25 @@
 }
 
 /* media quearies */
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
   .bikes {
     flex-direction: column-reverse;
   }
 
   .bikes .bikes-container {
-    grid-template-columns: repeat(2, 1fr);
     padding-right: 0;
     margin-top: 3rem;
   }
 
   .bikes .cart {
     padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bikes .bikes-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
